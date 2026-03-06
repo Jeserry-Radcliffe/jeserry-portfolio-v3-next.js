@@ -25,7 +25,6 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {/* ClientThemeProvider handles dark/light mode on the client */}
         <ClientThemeProvider>{children}</ClientThemeProvider>
       </body>
     </html>
