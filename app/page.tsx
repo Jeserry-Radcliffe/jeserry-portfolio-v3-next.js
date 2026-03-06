@@ -1,4 +1,9 @@
+"use client";
 import Image from "next/image";
+import { Button } from "@/components/ui/button";
+import { ThemeProvider } from "next-themes";
+import { ThemeToggle } from "@/components/ui/theme-toggle";
+import ClientThemeProvider from "@/components/ClientThemeProvider";
 
 export default function Home() {
   return (
@@ -59,6 +64,8 @@ export default function Home() {
             Documentation
           </a>
         </div>
+
+        <ThemeToggle />
       </main>
     </div>
   );
