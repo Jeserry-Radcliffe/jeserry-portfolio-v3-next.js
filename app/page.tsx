@@ -11,11 +11,17 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
 import { HoverCardSides } from "@/components/hovercards";
+import ContactForm from "@/components/contact-form";
+import { MdOutlineWorkOutline } from "react-icons/md";
+import { FaChevronCircleUp } from "react-icons/fa";
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-20 px-10 bg-white dark:bg-black sm:items-start">
+      <main
+        className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 bg-white dark:bg-black sm:items-start "
+        id="top"
+      >
         <p className="text-5xl font-semibold my-15">
           Building bridges between design and code
         </p>
@@ -23,24 +29,30 @@ export default function Home() {
           I'm Jeserry, a design engineer at ONCE UI, where I craft intuitive
           user experiences. After hours, I build my own projects.
         </p>
-        <Button variant="outline" className="rounded-full p-5 mt-15 mx-10">
-          <img
-            src="/res/photo-jeserry.jpg"
-            alt="jeserry.jpg"
-            className="w-6 h-6 rounded-full object-cover border border-gray-200 shadow-2xl"
-          />
-          About - Jeserry
-        </Button>
-        <Button variant="outline" className="rounded-full p-5 mt-5 mx-10">
-          <img
-            src="/res/photo-jeserry.jpg"
-            alt="jeserry.jpg"
-            className="w-6 h-6 rounded-full object-cover border border-gray-200 shadow-2xl"
-          />
-          Work Experience
-        </Button>
+        <a href="#about" className="flex justify-center mt-13 mx-10">
+          <Button variant="outline" className="rounded-full p-5">
+            <img
+              src="/res/photo-jeserry.jpg"
+              alt="jeserry.jpg"
+              className="w-6 h-6 rounded-full object-cover border border-gray-200 shadow-2xl"
+            />
+            About - Jeserry
+          </Button>
+        </a>
+        <a href="#workexp" className="flex justify-center">
+          <Button
+            variant="outline"
+            className="rounded-full py-5 px-10 mt-5 mx-10"
+          >
+            <MdOutlineWorkOutline />
+            &nbsp;&nbsp; Work Experiences
+          </Button>
+        </a>
 
-        <div className="w-full flex flex-col items-center justify-between mt-40 mb-20">
+        <div
+          className="w-full flex flex-col items-center justify-between mt-40 mb-20 scroll-mt-5"
+          id="about"
+        >
           <img
             src="/res/photo-jeserry.jpg"
             alt="jeserry.jpg"
@@ -59,10 +71,12 @@ export default function Home() {
             </Badge>
           </div>
           <div>
-            <Button variant="outline" className="rounded-full p-5 mt-10 mb-7">
-              <MdEmail className="w-6 h-6 text-center" />
-              Send an Email
-            </Button>
+            <a href="#contact">
+              <Button variant="outline" className="rounded-full p-5 mt-10 mb-7">
+                <MdEmail className="w-6 h-6 text-center" />
+                Send an Email
+              </Button>
+            </a>
           </div>
           <div>
             <p className="text-4xl font-bold">Mark Jeserry</p>
@@ -71,16 +85,24 @@ export default function Home() {
 
           <div className="mt-5 flex justify-between text-center w-[85%]">
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <FaGithub style={{ width: "25px", height: "25px" }} />
+              <a href="">
+                <FaGithub style={{ width: "25px", height: "25px" }} />
+              </a>
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <FaLinkedin style={{ width: "25px", height: "25px" }} />
+              <a href="">
+                <FaLinkedin style={{ width: "25px", height: "25px" }} />
+              </a>
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+              <a href="">
+                <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+              </a>
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <IoDocument style={{ width: "25px", height: "25px" }} />
+              <a href="">
+                <IoDocument style={{ width: "25px", height: "25px" }} />
+              </a>
             </div>
           </div>
 
@@ -94,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div>
+        <div id="workexp" className="scroll-mt-10">
           <div className="w-full flex my-2 ">
             <h1 className="text-3xl">Work Experience</h1>
           </div>
@@ -260,7 +282,10 @@ export default function Home() {
               praesentium quis eos autem dolorum itaque.
             </p>
             <p>
-              <a href="https://jeserry-radcliffe.github.io/Module/">
+              <a
+                href="https://jeserry-radcliffe.github.io/Module/"
+                className="cursor-pointer"
+              >
                 Project Link
               </a>
             </p>
@@ -287,13 +312,19 @@ export default function Home() {
               performance and offer insights of organized tables.
             </p>
             <p>
-              <a href="https://jeserry-radcliffe.github.io/Module/">
+              <a
+                href="https://jeserry-radcliffe.github.io/Module/"
+                className="cursor-pointer"
+              >
                 Project Link
               </a>
             </p>
             <div className="flex w-full flex-wrap gap-2 mt-5">
               <Badge variant={"secondary"}>HTML</Badge>
               <Badge variant={"secondary"}>CSS</Badge>
+              <Badge variant={"secondary"}>JavaScript</Badge>
+              <Badge variant={"secondary"}>Php</Badge>
+              <Badge variant={"secondary"}>MySQL</Badge>
             </div>
           </div>
 
@@ -313,19 +344,61 @@ export default function Home() {
               students and visitors informed.
             </p>
             <p>
-              <a href="https://www.youtube.com/watch?v=aqnKQRWLhF4">
+              <a
+                href="https://www.youtube.com/watch?v=aqnKQRWLhF4"
+                className="cursor-pointer"
+              >
                 Project Link
               </a>
             </p>
             <div className="flex w-full flex-wrap gap-2 mt-5">
               <Badge variant={"secondary"}>HTML</Badge>
               <Badge variant={"secondary"}>CSS</Badge>
+              <Badge variant={"secondary"}>Php</Badge>
             </div>
           </div>
         </div>
 
-        <div className="mt-">
+        <div className="my-15 scroll-mt-8" id="contact">
+          <div className="w-full flex my-2 ">
+            <h1 className="text-3xl">Contact</h1>
+          </div>
+          <div>
+            <ContactForm></ContactForm>
+          </div>
+        </div>
 
+        <footer>
+          <p className="text-sm text-center flex flex-col items-center justify-center w-full">
+            © Mark Jeserry Sicat - All Rights Reserved 2026
+          </p>
+
+          <div className="mt-5 flex justify-between text-center items-center w-[85%] mx-auto">
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <FaGithub style={{ width: "25px", height: "25px" }} />
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <FaLinkedin style={{ width: "25px", height: "25px" }} />
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <IoDocument style={{ width: "25px", height: "25px" }} />
+            </div>
+          </div>
+        </footer>
+
+        <div className="fixed bottom-5 right-6">
+          <a href="#top" className="w-7 h-7">
+            <Button
+              variant={"secondary"}
+              size={"icon"}
+              className="rounded-full transition-transform duration-200 hover:-translate-y-2"
+            >
+              <FaChevronCircleUp />
+            </Button>
+          </a>
         </div>
 
         <br />

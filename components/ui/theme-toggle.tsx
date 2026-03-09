@@ -11,7 +11,7 @@ export function ThemeToggle() {
     <Button
       variant="outline"
       size="icon"
-      className="rounded-full"
+      className="rounded-full absolute"
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <FaSun

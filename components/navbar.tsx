@@ -12,7 +12,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="p-3 w-full px-7">
+    <NavigationMenu className="p-3 w-full px-7 hidden">
       <NavigationMenuList className="gap-36">
         <NavigationMenuItem>
           <p className="text-md font-bold">MyPortFolio</p>
