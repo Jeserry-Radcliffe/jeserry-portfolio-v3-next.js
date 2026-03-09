@@ -14,7 +14,7 @@ import { IoDocument } from "react-icons/io5";
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-20 px-10 bg-white dark:bg-black sm:items-start">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-20 px-10 bg-white dark:bg-black sm:items-start">
         <p className="text-5xl font-semibold my-15">
           Building bridges between design and code
         </p>
@@ -22,16 +22,24 @@ export default function Home() {
           I'm Jeserry, a design engineer at ONCE UI, where I craft intuitive
           user experiences. After hours, I build my own projects.
         </p>
-        <Button variant="outline" className="rounded-full p-5  my-15">
+        <Button variant="outline" className="rounded-full p-5 mt-15 mx-10">
           <img
             src="/res/photo-jeserry.jpg"
             alt="jeserry.jpg"
-            className="w-6 h-6 rounded-full object-cover  border border-gray-200"
+            className="w-6 h-6 rounded-full object-cover border border-gray-200 shadow-2xl"
           />
           About - Jeserry
         </Button>
+        <Button variant="outline" className="rounded-full p-5 mt-5 mx-10">
+          <img
+            src="/res/photo-jeserry.jpg"
+            alt="jeserry.jpg"
+            className="w-6 h-6 rounded-full object-cover border border-gray-200 shadow-2xl"
+          />
+          Work Experience
+        </Button>
 
-        <div className="w-full flex flex-col items-center justify-between mt-40">
+        <div className="w-full flex flex-col items-center justify-between mt-40 mb-20">
           <img
             src="/res/photo-jeserry.jpg"
             alt="jeserry.jpg"
@@ -50,7 +58,7 @@ export default function Home() {
             </Badge>
           </div>
           <div>
-            <Button variant="outline" className="rounded-full p-5  mt-15 mb-7">
+            <Button variant="outline" className="rounded-full p-5 mt-15 mb-7">
               <MdEmail className="w-6 h-6 text-center" />
               Send an Email
             </Button>
@@ -84,9 +92,101 @@ export default function Home() {
             </p>
           </div>
         </div>
+
+        <div className="w-full flex my-2 ">
+          <h1 className="text-3xl">Work Experience</h1>
+        </div>
+
+        <div className="flex flex-col w-full my-2">
+          <div className="flex justify-between items-center">
+            <p className="text-lg font-bold">Pru Life UK</p>
+            <p className="text-gray-400">2025</p>
+          </div>
+          <span className="text-blue-400 text-sm">Branch Assistant</span>
+        </div>
+        <div>
+          <ul className="list-disc list-inside p-3 text-md my-2">
+            <li>
+              Redesigned the UI/UX for the FLY platform, resulting in a 20%
+              increase in user engagement and 30% faster load times.
+            </li>
+            <br />
+            <li>
+              Spearheaded the integration of AI tools into design workflows,
+              enabling designers to iterate 50% faster.
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex flex-col w-full my-2">
+          <div className="flex justify-between items-center">
+            <p className="text-lg font-bold">Pru Life UK</p>
+            <p className="text-gray-400">2025</p>
+          </div>
+          <span className="text-blue-400 text-sm">Admin OJT | IT Support</span>
+        </div>
+        <div>
+          <ul className="list-disc list-inside p-3 text-md my-2">
+            <li>
+              Redesigned the UI/UX for the FLY platform, resulting in a 20%
+              increase in user engagement and 30% faster load times.
+            </li>
+            <br />
+            <li>
+              Spearheaded the integration of AI tools into design workflows,
+              enabling designers to iterate 50% faster.
+            </li>
+          </ul>
+        </div>
+
+        <div className="flex flex-col w-full my-2">
+          <div className="flex justify-between items-center">
+            <p className="text-lg font-bold">URS Morong</p>
+            <p className="text-gray-400">2023</p>
+          </div>
+          <span className="text-blue-400 text-sm">
+            Procurement Student Assistant
+          </span>
+        </div>
+        <div>
+          <ul className="list-disc list-inside p-3 text-md my-2">
+            <li>
+              Redesigned the UI/UX for the FLY platform, resulting in a 20%
+              increase in user engagement and 30% faster load times.
+            </li>
+            <br />
+            <li>
+              Spearheaded the integration of AI tools into design workflows,
+              enabling designers to iterate 50% faster.
+            </li>
+          </ul>
+        </div>
+
+        <div className="w-full flex mt-10 mb-2 ">
+          <h1 className="text-3xl">Studies</h1>
+        </div>
+
+        <div className="mb-5">
+          <p className="text-lg">University of Rizal System</p>
+          <p className="text-gray-400">Studied BS Computer Science</p>
+          <p className="text-gray-400">Cum Laude</p>
+        </div>
+
+        <div>
+          <p className="text-lg">ICCT Colleges</p>
+          <p className="text-gray-400">Studied STEM</p>
+        </div>
+
+        <div className="w-full flex mt-10 mb-2 ">
+          <h1 className="text-3xl">Technical Skills</h1>
+        </div>
+
         <br />
         <br />
         <ThemeToggle />
+
+        <br />
+        <br />
       </main>
 
       {/* <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
