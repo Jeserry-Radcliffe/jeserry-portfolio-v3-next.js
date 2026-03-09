@@ -10,6 +10,7 @@ import { MdEmail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
+import { HoverCardSides } from "@/components/hovercards";
 
 export default function Home() {
   return (
@@ -46,7 +47,7 @@ export default function Home() {
             className="w-45 h-45 rounded-full object-cover border border-gray-200"
           />
           <div className="flex justify-center w-full p-1 text-center mt-3">
-            <TiWorldOutline className="w-6 h-6 text-center" />
+            <TiWorldOutline className="w-6 h-6 text-center text-blue-500" />
             <p className="text-center pl-3">Asia/Manila</p>
           </div>
           <div className="flex justify-center mt-3">
@@ -58,13 +59,13 @@ export default function Home() {
             </Badge>
           </div>
           <div>
-            <Button variant="outline" className="rounded-full p-5 mt-15 mb-7">
+            <Button variant="outline" className="rounded-full p-5 mt-10 mb-7">
               <MdEmail className="w-6 h-6 text-center" />
               Send an Email
             </Button>
           </div>
           <div>
-            <p className="text-3xl font-bold">Mark Jeserry</p>
+            <p className="text-4xl font-bold">Mark Jeserry</p>
             <p className="text-2xl font-extralight text-center">Programmer</p>
           </div>
 
@@ -93,73 +94,77 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="w-full flex my-2 ">
-          <h1 className="text-3xl">Work Experience</h1>
-        </div>
-
-        <div className="flex flex-col w-full my-2">
-          <div className="flex justify-between items-center">
-            <p className="text-lg font-bold">Pru Life UK</p>
-            <p className="text-gray-400">2025</p>
-          </div>
-          <span className="text-blue-400 text-sm">Branch Assistant</span>
-        </div>
         <div>
-          <ul className="list-disc list-inside p-3 text-md my-2">
-            <li>
-              Redesigned the UI/UX for the FLY platform, resulting in a 20%
-              increase in user engagement and 30% faster load times.
-            </li>
-            <br />
-            <li>
-              Spearheaded the integration of AI tools into design workflows,
-              enabling designers to iterate 50% faster.
-            </li>
-          </ul>
-        </div>
-
-        <div className="flex flex-col w-full my-2">
-          <div className="flex justify-between items-center">
-            <p className="text-lg font-bold">Pru Life UK</p>
-            <p className="text-gray-400">2025</p>
+          <div className="w-full flex my-2 ">
+            <h1 className="text-3xl">Work Experience</h1>
           </div>
-          <span className="text-blue-400 text-sm">Admin OJT | IT Support</span>
-        </div>
-        <div>
-          <ul className="list-disc list-inside p-3 text-md my-2">
-            <li>
-              Redesigned the UI/UX for the FLY platform, resulting in a 20%
-              increase in user engagement and 30% faster load times.
-            </li>
-            <br />
-            <li>
-              Spearheaded the integration of AI tools into design workflows,
-              enabling designers to iterate 50% faster.
-            </li>
-          </ul>
-        </div>
 
-        <div className="flex flex-col w-full my-2">
-          <div className="flex justify-between items-center">
-            <p className="text-lg font-bold">URS Morong</p>
-            <p className="text-gray-400">2023 - 2024</p>
+          <div className="flex flex-col w-full my-2">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">Pru Life UK</p>
+              <p className="text-gray-400">2025</p>
+            </div>
+            <span className="text-blue-400 text-sm">Branch Assistant</span>
           </div>
-          <span className="text-blue-400 text-sm">
-            Budget Student Assistant
-          </span>
-        </div>
-        <div>
-          <ul className="list-disc list-inside p-3 text-md my-2">
-            <li>
-              Redesigned the UI/UX for the FLY platform, resulting in a 20%
-              increase in user engagement and 30% faster load times.
-            </li>
-            <br />
-            <li>
-              Spearheaded the integration of AI tools into design workflows,
-              enabling designers to iterate 50% faster.
-            </li>
-          </ul>
+          <div>
+            <ul className="list-disc list-inside p-3 text-md my-2">
+              <li>
+                Redesigned the UI/UX for the FLY platform, resulting in a 20%
+                increase in user engagement and 30% faster load times.
+              </li>
+              <br />
+              <li>
+                Spearheaded the integration of AI tools into design workflows,
+                enabling designers to iterate 50% faster.
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col w-full my-2">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">Pru Life UK</p>
+              <p className="text-gray-400">2025</p>
+            </div>
+            <span className="text-blue-400 text-sm">
+              Admin OJT | IT Support
+            </span>
+          </div>
+          <div>
+            <ul className="list-disc list-inside p-3 text-md my-2">
+              <li>
+                Redesigned the UI/UX for the FLY platform, resulting in a 20%
+                increase in user engagement and 30% faster load times.
+              </li>
+              <br />
+              <li>
+                Spearheaded the integration of AI tools into design workflows,
+                enabling designers to iterate 50% faster.
+              </li>
+            </ul>
+          </div>
+
+          <div className="flex flex-col w-full my-2">
+            <div className="flex justify-between items-center">
+              <p className="text-lg font-bold">URS Morong</p>
+              <p className="text-gray-400">2023 - 2024</p>
+            </div>
+            <span className="text-blue-400 text-sm">
+              Budget Student Assistant
+            </span>
+          </div>
+          <div>
+            <ul className="list-disc list-inside p-3 text-md my-2">
+              <li>
+                Redesigned the UI/UX for the FLY platform, resulting in a 20%
+                increase in user engagement and 30% faster load times.
+              </li>
+              <br />
+              <li>
+                Spearheaded the integration of AI tools into design workflows,
+                enabling designers to iterate 50% faster.
+              </li>
+            </ul>
+          </div>
         </div>
 
         <div className="w-full flex mt-10 mb-2 ">
@@ -177,8 +182,150 @@ export default function Home() {
           <p className="text-gray-400">Studied STEM</p>
         </div>
 
-        <div className="w-full flex mt-10 mb-2 ">
-          <h1 className="text-3xl">Technical Skills</h1>
+        <div>
+          <div className="w-full flex mt-10 mb-2 ">
+            <h1 className="text-3xl">Technical Skills</h1>
+          </div>
+
+          <div className="mb-2">
+            <p className="text-bold">Programming Languages: </p>
+          </div>
+
+          <div className="flex flex-wrap gap-2 w-full">
+            <Badge variant={"secondary"}>Python</Badge>
+            <Badge variant={"secondary"}>Java</Badge>
+            <Badge variant={"secondary"}>VB.Net</Badge>
+            <Badge variant={"secondary"}>Php</Badge>
+          </div>
+
+          <div className="mt-5 mb-2 ">
+            <p className="text-bold">Web Development: </p>
+          </div>
+
+          <div className="flex w-full flex-wrap gap-2">
+            <Badge variant={"secondary"}>HTML</Badge>
+            <Badge variant={"secondary"}>CSS</Badge>
+            <Badge variant={"secondary"}>Tailwind CSS</Badge>
+            <Badge variant={"secondary"}>JavaScript</Badge>
+            <Badge variant={"secondary"}>Next JS</Badge>
+            <Badge variant={"secondary"}>Shadcdn UI</Badge>
+          </div>
+
+          <div className="mt-5 mb-2 ">
+            <p className="text-bold">Networking & IT: </p>
+          </div>
+
+          <div className="flex w-full flex-wrap gap-2">
+            <Badge variant={"secondary"}>Basic Network Configuration</Badge>
+            <Badge variant={"secondary"}>Troubleshooting</Badge>
+          </div>
+
+          <div className="mt-5 mb-2 ">
+            <p className="text-bold">Database Management: </p>
+          </div>
+
+          <div className="flex w-full flex-wrap gap-2">
+            <Badge variant={"secondary"}>MySQL</Badge>
+          </div>
+
+          <div className="mt-5 mb-2 ">
+            <p className="text-bold">Tools & Technologies: </p>
+          </div>
+
+          <div className="flex w-full flex-wrap gap-2">
+            <Badge variant={"secondary"}>MS Office</Badge>
+            <Badge variant={"secondary"}>VS Studio Code</Badge>
+            <Badge variant={"secondary"}>Adobe Photoshop</Badge>
+            <Badge variant={"secondary"}>Canva</Badge>
+            <Badge variant={"secondary"}>Github</Badge>
+            <Badge variant={"secondary"}>Git</Badge>
+          </div>
+        </div>
+
+        <div className="mt-15">
+          <div className="w-full flex my-2 ">
+            <h1 className="text-3xl">Projects</h1>
+          </div>
+          <div className="my-10">
+            <p className="text-xl my-3">Grade 10 Learning Module</p>
+            <img
+              src="/res/module.png"
+              alt="module.png"
+              className="w-full aspect-4/3 object-cover rounded-lg my-5"
+            />
+            <p className="text-sm my-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              corporis vel aperiam necessitatibus accusantium. Excepturi rerum
+              cumque, eius aut esse omnis voluptas odit, dignissimos,
+              praesentium quis eos autem dolorum itaque.
+            </p>
+            <p>
+              <a href="https://jeserry-radcliffe.github.io/Module/">
+                Project Link
+              </a>
+            </p>
+            <div className="flex w-full flex-wrap gap-2 mt-5">
+              <Badge variant={"secondary"}>HTML</Badge>
+              <Badge variant={"secondary"}>CSS</Badge>
+            </div>
+          </div>
+
+          <div className="my-10">
+            <p className="text-xl">Budget Monitoring System</p>
+            <img
+              src="/res/bms1.jpg"
+              alt="bms.jpg"
+              className="w-full object-cover rounded-lg my-5"
+            />
+            <p className="text-sm my-5">
+              This system records and categorizes expenses, provides real-time
+              updates on spending, and monitors all sources of income against
+              projected revenues. It aids in creating detailed budget plans and
+              setting financial goals, while sending alerts for overspending or
+              unusual activity, and notifying users of upcoming payments or
+              deadlines. With its ability to generate reports on financial
+              performance and offer insights of organized tables.
+            </p>
+            <p>
+              <a href="https://jeserry-radcliffe.github.io/Module/">
+                Project Link
+              </a>
+            </p>
+            <div className="flex w-full flex-wrap gap-2 mt-5">
+              <Badge variant={"secondary"}>HTML</Badge>
+              <Badge variant={"secondary"}>CSS</Badge>
+            </div>
+          </div>
+
+          <div className="my-10">
+            <p className="text-xl">URS Landing Page</p>
+            <img
+              src="/res/urs.jpg"
+              alt="urs.jpg"
+              className="w-full object-cover rounded-lg my-5"
+            />
+            <p className="text-sm my-5">
+              The University of Rizal System landing page welcomes
+              students/admin with a clean design that highlights the
+              university’s mission and academic programs. It provides easy
+              access to important sections such as admissions, academics, and
+              student services. The page also shares news and events to keep
+              students and visitors informed.
+            </p>
+            <p>
+              <a href="https://www.youtube.com/watch?v=aqnKQRWLhF4">
+                Project Link
+              </a>
+            </p>
+            <div className="flex w-full flex-wrap gap-2 mt-5">
+              <Badge variant={"secondary"}>HTML</Badge>
+              <Badge variant={"secondary"}>CSS</Badge>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-">
+
         </div>
 
         <br />
