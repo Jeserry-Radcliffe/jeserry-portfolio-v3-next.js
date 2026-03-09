@@ -142,10 +142,10 @@ export default function Home() {
         <div className="flex flex-col w-full my-2">
           <div className="flex justify-between items-center">
             <p className="text-lg font-bold">URS Morong</p>
-            <p className="text-gray-400">2023</p>
+            <p className="text-gray-400">2023 - 2024</p>
           </div>
           <span className="text-blue-400 text-sm">
-            Procurement Student Assistant
+            Budget Student Assistant
           </span>
         </div>
         <div>
