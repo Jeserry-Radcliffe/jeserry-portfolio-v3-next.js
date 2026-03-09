@@ -4,11 +4,92 @@ import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "next-themes";
 import { ThemeToggle } from "@/components/ui/theme-toggle";
 import ClientThemeProvider from "@/components/ClientThemeProvider";
+import { TiWorldOutline } from "react-icons/ti";
+import { Badge } from "@/components/ui/badge";
+import { MdEmail } from "react-icons/md";
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { IoDocument } from "react-icons/io5";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-20 px-10 bg-white dark:bg-black sm:items-start">
+        <p className="text-5xl font-semibold my-15">
+          Building bridges between design and code
+        </p>
+        <p className="">
+          I'm Jeserry, a design engineer at ONCE UI, where I craft intuitive
+          user experiences. After hours, I build my own projects.
+        </p>
+        <Button variant="outline" className="rounded-full p-5  my-15">
+          <img
+            src="/res/photo-jeserry.jpg"
+            alt="jeserry.jpg"
+            className="w-6 h-6 rounded-full object-cover  border border-gray-200"
+          />
+          About - Jeserry
+        </Button>
+
+        <div className="w-full flex flex-col items-center justify-between mt-40">
+          <img
+            src="/res/photo-jeserry.jpg"
+            alt="jeserry.jpg"
+            className="w-45 h-45 rounded-full object-cover border border-gray-200"
+          />
+          <div className="flex justify-center w-full p-1 text-center mt-3">
+            <TiWorldOutline className="w-6 h-6 text-center" />
+            <p className="text-center pl-3">Asia/Manila</p>
+          </div>
+          <div className="flex justify-center mt-3">
+            <Badge variant="secondary" className="p-1 px-3">
+              English
+            </Badge>
+            <Badge variant="secondary" className="p-1 px-3 ml-2">
+              Filipino
+            </Badge>
+          </div>
+          <div>
+            <Button variant="outline" className="rounded-full p-5  mt-15 mb-7">
+              <MdEmail className="w-6 h-6 text-center" />
+              Send an Email
+            </Button>
+          </div>
+          <div>
+            <p className="text-3xl font-bold">Mark Jeserry</p>
+            <p className="text-2xl font-extralight text-center">Programmer</p>
+          </div>
+
+          <div className="mt-5 flex justify-between text-center w-[85%]">
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <FaGithub style={{ width: "25px", height: "25px" }} />
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <FaLinkedin style={{ width: "25px", height: "25px" }} />
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+            </div>
+            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+              <IoDocument style={{ width: "25px", height: "25px" }} />
+            </div>
+          </div>
+
+          <div className="mt-15 flex justify-between">
+            <p>
+              Jeserry is a Jakarta-based design engineer with a passion for
+              transforming complex challenges into simple, elegant design
+              solutions. Her work spans digital interfaces, interactive
+              experiences, and the convergence of design and technology.
+            </p>
+          </div>
+        </div>
+        <br />
+        <br />
+        <ThemeToggle />
+      </main>
+
+      {/* <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         <Image
           className="dark:invert"
           src="/next.svg"
@@ -66,7 +147,7 @@ export default function Home() {
         </div>
 
         <ThemeToggle />
-      </main>
+      </main> */}
     </div>
   );
 }
