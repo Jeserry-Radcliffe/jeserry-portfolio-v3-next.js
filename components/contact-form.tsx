@@ -28,25 +28,26 @@ export default function ContactForm() {
         name="access_key"
         value="97674e75-f296-4b8f-8af4-030253ad6d2f"
       />
-      <FieldSet className="mt-5 w-full h-full">
+      <FieldSet className="mt-5
+      md: ">
         <FieldLegend>Interested?</FieldLegend>
         <FieldDescription>Let's work together!.</FieldDescription>
         <FieldGroup>
           <Field>
             <FieldLabel htmlFor="email">Full Email</FieldLabel>
-            <Input id="email" autoComplete="off" placeholder="Email here" />
+            <Input id="email" name="email" autoComplete="off" placeholder="Email here" />
             <FieldDescription>This is how will I contact you.</FieldDescription>
           </Field>
 
           <Field>
             <FieldLabel htmlFor="name">Name</FieldLabel>
-            <Input id="name" autoComplete="off" placeholder="Name" />
+            <Input id="name" name="name" autoComplete="off" placeholder="Name" />
             {/* aria-invalid */}
           </Field>
 
           <Field>
             <FieldLabel htmlFor="name">Message</FieldLabel>
-            <Textarea id="message" autoComplete="off" placeholder="Message" />
+            <Textarea id="message" name="message" autoComplete="off" placeholder="Message" />
           </Field>
 
           <Button variant={"default"} id="submit-email">Send</Button>

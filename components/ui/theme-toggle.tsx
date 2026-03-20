@@ -10,8 +10,8 @@ export function ThemeToggle() {
   return (
     <Button
       variant="outline"
-      size="icon"
-      className="rounded-full absolute"
+      size="icon-lg"
+      className="rounded-full absolute lg:ml-5 "
       onClick={() => setTheme(theme === "light" ? "dark" : "light")}
     >
       <FaSun

@@ -17,19 +17,28 @@ import { FaChevronCircleUp } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black w-full">
       <main
-        className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 bg-white dark:bg-black sm:items-start "
+        className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 bg-white dark:bg-black sm:items-start 
+        md:py-25 md:px-50 lg:px-0 lg:max-w-4xl"
         id="top"
       >
-        <p className="text-5xl font-semibold my-15">
+        <ThemeToggle />
+        <p
+          className="text-5xl font-semibold my-15 bg-cover bg-center lg:px-5
+        lg:text-7xl lg:mt-20"
+        >
           Building bridges between design and code
         </p>
-        <p className="">
-          I'm Jeserry, a design engineer at ONCE UI, where I craft intuitive
+        <p className="lg:text-xl  lg:px-5">
+          I'm Jeserry, a design engineer, programmer, where I craft intuitive
           user experiences. After hours, I build my own projects.
         </p>
-        <a href="#about" className="flex justify-center mt-13 mx-10">
+        <a
+          href="#about"
+          className="flex justify-center mt-13 mx-10
+        md:mt-25 md:mx-25 lg:mt-30 lg:mx-72"
+        >
           <Button variant="outline" className="rounded-full p-5">
             <img
               src="/res/photo-jeserry.jpg"
@@ -39,341 +48,377 @@ export default function Home() {
             About - Jeserry
           </Button>
         </a>
-        <a href="#workexp" className="flex justify-center">
-          <Button
-            variant="outline"
-            className="rounded-full py-5 px-10 mt-5 mx-10"
-          >
+        <a
+          href="#workexp"
+          className="flex justify-center mt-5 mx-10
+        md:mx-24 lg:mb-30 lg:mx-72"
+        >
+          <Button variant="outline" className="rounded-full p-5">
             <MdOutlineWorkOutline />
             &nbsp;&nbsp; Work Experiences
           </Button>
         </a>
 
         <div
-          className="w-full flex flex-col items-center justify-between mt-40 mb-20 scroll-mt-5"
+          className="w-full flex flex-col justify-between mt-40 mb-20 scroll-mt-20
+          lg:flex-row"
           id="about"
         >
-          <img
-            src="/res/photo-jeserry.jpg"
-            alt="jeserry.jpg"
-            className="w-45 h-45 rounded-full object-cover border border-gray-200"
-          />
-          <div className="flex justify-center w-full p-1 text-center mt-3">
-            <TiWorldOutline className="w-6 h-6 text-center text-blue-500" />
-            <p className="text-center pl-3">Asia/Manila</p>
-          </div>
-          <div className="flex justify-center mt-3">
-            <Badge variant="secondary" className="p-1 px-3">
-              English
-            </Badge>
-            <Badge variant="secondary" className="p-1 px-3 ml-2">
-              Filipino
-            </Badge>
-          </div>
-          <div>
-            <a href="#contact">
-              <Button variant="outline" className="rounded-full p-5 mt-10 mb-7">
-                <MdEmail className="w-6 h-6 text-center" />
-                Send an Email
-              </Button>
-            </a>
-          </div>
-          <div>
-            <p className="text-4xl font-bold">Mark Jeserry</p>
-            <p className="text-2xl font-extralight text-center">Programmer</p>
-          </div>
-
-          <div className="mt-5 flex justify-between text-center w-[85%]">
-            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <a href="">
-                <FaGithub style={{ width: "25px", height: "25px" }} />
-              </a>
-            </div>
-            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <a href="">
-                <FaLinkedin style={{ width: "25px", height: "25px" }} />
-              </a>
-            </div>
-            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <a href="">
-                <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
-              </a>
-            </div>
-            <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <a href="">
-                <IoDocument style={{ width: "25px", height: "25px" }} />
-              </a>
-            </div>
-          </div>
-
-          <div className="mt-15 flex justify-between">
-            <p>
-              Jeserry is a Jakarta-based design engineer with a passion for
-              transforming complex challenges into simple, elegant design
-              solutions. Her work spans digital interfaces, interactive
-              experiences, and the convergence of design and technology.
-            </p>
-          </div>
-        </div>
-
-        <div id="workexp" className="scroll-mt-10">
-          <div className="w-full flex my-2 ">
-            <h1 className="text-3xl">Work Experience</h1>
-          </div>
-
-          <div className="flex flex-col w-full my-2">
-            <div className="flex justify-between items-center">
-              <p className="text-lg font-bold">Pru Life UK</p>
-              <p className="text-gray-400">2025</p>
-            </div>
-            <span className="text-blue-400 text-sm">Branch Assistant</span>
-          </div>
-          <div>
-            <ul className="list-disc list-inside p-3 text-md my-2">
-              <li>
-                Redesigned the UI/UX for the FLY platform, resulting in a 20%
-                increase in user engagement and 30% faster load times.
-              </li>
-              <br />
-              <li>
-                Spearheaded the integration of AI tools into design workflows,
-                enabling designers to iterate 50% faster.
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col w-full my-2">
-            <div className="flex justify-between items-center">
-              <p className="text-lg font-bold">Pru Life UK</p>
-              <p className="text-gray-400">2025</p>
-            </div>
-            <span className="text-blue-400 text-sm">
-              Admin OJT | IT Support
-            </span>
-          </div>
-          <div>
-            <ul className="list-disc list-inside p-3 text-md my-2">
-              <li>
-                Redesigned the UI/UX for the FLY platform, resulting in a 20%
-                increase in user engagement and 30% faster load times.
-              </li>
-              <br />
-              <li>
-                Spearheaded the integration of AI tools into design workflows,
-                enabling designers to iterate 50% faster.
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col w-full my-2">
-            <div className="flex justify-between items-center">
-              <p className="text-lg font-bold">URS Morong</p>
-              <p className="text-gray-400">2023 - 2024</p>
-            </div>
-            <span className="text-blue-400 text-sm">
-              Budget Student Assistant
-            </span>
-          </div>
-          <div>
-            <ul className="list-disc list-inside p-3 text-md my-2">
-              <li>
-                Redesigned the UI/UX for the FLY platform, resulting in a 20%
-                increase in user engagement and 30% faster load times.
-              </li>
-              <br />
-              <li>
-                Spearheaded the integration of AI tools into design workflows,
-                enabling designers to iterate 50% faster.
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div className="w-full flex mt-10 mb-2 ">
-          <h1 className="text-3xl">Studies</h1>
-        </div>
-
-        <div className="mb-5">
-          <p className="text-lg">University of Rizal System</p>
-          <p className="text-gray-400">Studied BS Computer Science</p>
-          <p className="text-gray-400">Cum Laude</p>
-        </div>
-
-        <div>
-          <p className="text-lg">ICCT Colleges</p>
-          <p className="text-gray-400">Studied STEM</p>
-        </div>
-
-        <div>
-          <div className="w-full flex mt-10 mb-2 ">
-            <h1 className="text-3xl">Technical Skills</h1>
-          </div>
-
-          <div className="mb-2">
-            <p className="text-bold">Programming Languages: </p>
-          </div>
-
-          <div className="flex flex-wrap gap-2 w-full">
-            <Badge variant={"secondary"}>Python</Badge>
-            <Badge variant={"secondary"}>Java</Badge>
-            <Badge variant={"secondary"}>VB.Net</Badge>
-            <Badge variant={"secondary"}>Php</Badge>
-          </div>
-
-          <div className="mt-5 mb-2 ">
-            <p className="text-bold">Web Development: </p>
-          </div>
-
-          <div className="flex w-full flex-wrap gap-2">
-            <Badge variant={"secondary"}>HTML</Badge>
-            <Badge variant={"secondary"}>CSS</Badge>
-            <Badge variant={"secondary"}>Tailwind CSS</Badge>
-            <Badge variant={"secondary"}>JavaScript</Badge>
-            <Badge variant={"secondary"}>Next JS</Badge>
-            <Badge variant={"secondary"}>Shadcdn UI</Badge>
-          </div>
-
-          <div className="mt-5 mb-2 ">
-            <p className="text-bold">Networking & IT: </p>
-          </div>
-
-          <div className="flex w-full flex-wrap gap-2">
-            <Badge variant={"secondary"}>Basic Network Configuration</Badge>
-            <Badge variant={"secondary"}>Troubleshooting</Badge>
-          </div>
-
-          <div className="mt-5 mb-2 ">
-            <p className="text-bold">Database Management: </p>
-          </div>
-
-          <div className="flex w-full flex-wrap gap-2">
-            <Badge variant={"secondary"}>MySQL</Badge>
-          </div>
-
-          <div className="mt-5 mb-2 ">
-            <p className="text-bold">Tools & Technologies: </p>
-          </div>
-
-          <div className="flex w-full flex-wrap gap-2">
-            <Badge variant={"secondary"}>MS Office</Badge>
-            <Badge variant={"secondary"}>VS Studio Code</Badge>
-            <Badge variant={"secondary"}>Adobe Photoshop</Badge>
-            <Badge variant={"secondary"}>Canva</Badge>
-            <Badge variant={"secondary"}>Github</Badge>
-            <Badge variant={"secondary"}>Git</Badge>
-          </div>
-        </div>
-
-        <div className="mt-15">
-          <div className="w-full flex my-2 ">
-            <h1 className="text-3xl">Projects</h1>
-          </div>
-          <div className="my-10">
-            <p className="text-xl my-3">Grade 10 Learning Module</p>
+          <div className="lg:w-[40%] lg:sticky lg:top-20 h-fit items-center flex flex-col mt-10">
             <img
-              src="/res/module.png"
-              alt="module.png"
-              className="w-full aspect-4/3 object-cover rounded-lg my-5"
+              src="/res/photo-jeserry.jpg"
+              alt="jeserry.jpg"
+              className="w-45 h-45 rounded-full object-cover border border-gray-200 lg:w-56 lg:h-56 lg:items-center lg:mt-0"
             />
-            <p className="text-sm my-5">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-              corporis vel aperiam necessitatibus accusantium. Excepturi rerum
-              cumque, eius aut esse omnis voluptas odit, dignissimos,
-              praesentium quis eos autem dolorum itaque.
-            </p>
-            <p>
-              <a
-                href="https://jeserry-radcliffe.github.io/Module/"
-                className="cursor-pointer"
+            <div className="flex justify-center w-full p-1 items-center mt-3">
+              <TiWorldOutline className="w-6 h-6 text-center text-blue-500" />
+              <p className="text-center pl-3">Asia/Manila</p>
+            </div>
+            <div className="flex justify-center mt-3">
+              <Badge variant="secondary" className="p-1 px-3 lg:py-2 lg:px-4">
+                English
+              </Badge>
+              <Badge
+                variant="secondary"
+                className="p-1 px-3 ml-2 lg:py-2 lg:px-5"
               >
-                Project Link
+                Filipino
+              </Badge>
+            </div>
+            <div className="">
+              <a href="#contact">
+                <Button
+                  variant="outline"
+                  className="rounded-full p-5 mt-10 mb-7
+                  "
+                >
+                  <MdEmail
+                    style={{ width: "30px", height: "30px" }}
+                    className="w-6 h-6 text-2xl text-center"
+                  />
+                  Send an Email
+                </Button>
               </a>
-            </p>
-            <div className="flex w-full flex-wrap gap-2 mt-5">
-              <Badge variant={"secondary"}>HTML</Badge>
-              <Badge variant={"secondary"}>CSS</Badge>
             </div>
           </div>
 
-          <div className="my-10">
-            <p className="text-xl">Budget Monitoring System</p>
-            <img
-              src="/res/bms1.jpg"
-              alt="bms.jpg"
-              className="w-full object-cover rounded-lg my-5"
-            />
-            <p className="text-sm my-5">
-              This system records and categorizes expenses, provides real-time
-              updates on spending, and monitors all sources of income against
-              projected revenues. It aids in creating detailed budget plans and
-              setting financial goals, while sending alerts for overspending or
-              unusual activity, and notifying users of upcoming payments or
-              deadlines. With its ability to generate reports on financial
-              performance and offer insights of organized tables.
-            </p>
-            <p>
-              <a
-                href="https://jeserry-radcliffe.github.io/Module/"
-                className="cursor-pointer"
-              >
-                Project Link
-              </a>
-            </p>
-            <div className="flex w-full flex-wrap gap-2 mt-5">
-              <Badge variant={"secondary"}>HTML</Badge>
-              <Badge variant={"secondary"}>CSS</Badge>
-              <Badge variant={"secondary"}>JavaScript</Badge>
-              <Badge variant={"secondary"}>Php</Badge>
-              <Badge variant={"secondary"}>MySQL</Badge>
+          {/* right */}
+          <div className="lg:w-[60%] lg:flex lg:flex-col">
+            <div>
+              <p className="text-4xl font-bold text-center lg:text-left lg:text-6xl">
+                Mark Jeserry
+              </p>
+              <p className="text-2xl font-extralight text-center lg:text-left lg:text-4xl">
+                Programmer
+              </p>
             </div>
-          </div>
 
-          <div className="my-10">
-            <p className="text-xl">URS Landing Page</p>
-            <img
-              src="/res/urs.jpg"
-              alt="urs.jpg"
-              className="w-full object-cover rounded-lg my-5"
-            />
-            <p className="text-sm my-5">
-              The University of Rizal System landing page welcomes
-              students/admin with a clean design that highlights the
-              university’s mission and academic programs. It provides easy
-              access to important sections such as admissions, academics, and
-              student services. The page also shares news and events to keep
-              students and visitors informed.
-            </p>
-            <p>
-              <a
-                href="https://www.youtube.com/watch?v=aqnKQRWLhF4"
-                className="cursor-pointer"
-              >
-                Project Link
-              </a>
-            </p>
-            <div className="flex w-full flex-wrap gap-2 mt-5">
-              <Badge variant={"secondary"}>HTML</Badge>
-              <Badge variant={"secondary"}>CSS</Badge>
-              <Badge variant={"secondary"}>Php</Badge>
+            <div className="mt-7 flex justify-between text-center w-[70%] mx-auto lg:w-[50%] lg:mx-0">
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1 ">
+                <a href="">
+                  <FaGithub style={{ width: "25px", height: "25px" }} />
+                </a>
+              </div>
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+                <a href="">
+                  <FaLinkedin style={{ width: "25px", height: "25px" }} />
+                </a>
+              </div>
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+                <a href="">
+                  <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+                </a>
+              </div>
+              <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
+                <a href="">
+                  <IoDocument style={{ width: "25px", height: "25px" }} />
+                </a>
+              </div>
+            </div>
+
+            <div className="mt-15 flex justify-between lg:text-xl">
+              <p>
+                Jeserry is a Philippine-based design engineer with a passion for
+                transforming complex challenges into simple, elegant design
+                solutions. His work spans digital interfaces, interactive
+                experiences, and the convergence of design and technology.
+              </p>
+            </div>
+
+            <div id="workexp" className="scroll-mt-10 mt-20 lg:text-xl">
+              <div className="w-full flex my-2 ">
+                <h1 className="text-3xl">Work Experience</h1>
+              </div>
+
+              <div className="flex flex-col w-full my-2">
+                <div className="flex justify-between items-center">
+                  <p className="text-2xl font-bold">Pru Life UK</p>
+                  <p className="text-gray-400">2025</p>
+                </div>
+                <span className="text-blue-400 text-sm">Branch Assistant</span>
+              </div>
+              <div>
+                <ul className="list-disc list-inside p-3 text-md my-2">
+                  <li>
+                    Provides administrative support for the branch manager
+                    includes, handling emails, phone calls, handling client
+                    documents for new applications and after-sales
+                    management.Manages sales records & submissions for readiness
+                    and smooth process.
+                  </li>
+                  <br />
+                  <li>
+                    Provides assistance in checking hiring applications,
+                    documents, forms, submission of applications. Manages
+                    recruitment status.
+                  </li>
+                  <br />
+                  <li>
+                    Provides graphics design mainly in Canva, during
+                    announcements, daily sales report, newly recruit agents.
+                    Also provides PowerPoint slides during branch meeting or
+                    branch assembly.
+                  </li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col w-full my-2 ">
+                <div className="flex justify-between items-center">
+                  <p className="text-2xl font-bold">Pru Life UK</p>
+                  <p className="text-gray-400">2025</p>
+                </div>
+                <span className="text-blue-400 text-sm">
+                  Admin OJT | IT Support
+                </span>
+              </div>
+              <div>
+                <ul className="list-disc list-inside p-3 text-md my-2">
+                  <li>
+                    Manages offices files and records, handles client emails and
+                    phone calls.
+                  </li>
+                  <br />
+                  <li>
+                    {" "}
+                    Helping staff with tech questions &#40;IT SUPPORT&#41;
+                  </li>
+                  <li>Provides basic troubleshooting &#40;Software&#41;</li>
+                </ul>
+              </div>
+
+              <div className="flex flex-col w-full my-2">
+                <div className="flex justify-between items-center">
+                  <p className="text-2xl font-bold">URS Morong</p>
+                  <p className="text-gray-400">2023 - 2024</p>
+                </div>
+                <span className="text-blue-400 text-sm">
+                  Budget Student Assistant
+                </span>
+              </div>
+              <div>
+                <ul className="list-disc list-inside p-3 text-md my-2">
+                  <li>
+                    Responsible in preparing and maintaining financial records,
+                    ensuring accuracy and compliance with office standards.
+                  </li>
+                  <br />
+                  <li>
+                    Organized and updated documentation, improving workflow and
+                    accessibility.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="w-full flex mt-10 mb-2 ">
+              <h1 className="text-3xl">Studies</h1>
+            </div>
+
+            <div className="mb-5">
+              <p className="text-lg lg:text-2xl">University of Rizal System</p>
+              <p className="text-gray-400 lg:text-xl">
+                Studied BS Computer Science
+              </p>
+              <p className="text-gray-400">Cum Laude</p>
+            </div>
+
+            <div>
+              <p className="text-lg lg:text-2xl">ICCT Colleges</p>
+              <p className="text-gray-400 lg:text-xl">Studied STEM</p>
+            </div>
+
+            <div>
+              <div className="w-full flex mt-10 mb-2 ">
+                <h1 className="text-3xl">Technical Skills</h1>
+              </div>
+
+              <div className="mt-5 mb-2">
+                <p className="text-bold">Programming Languages: </p>
+              </div>
+
+              <div className="flex flex-wrap gap-2 w-full">
+                <Badge variant={"secondary"}>Python</Badge>
+                <Badge variant={"secondary"}>Java</Badge>
+                <Badge variant={"secondary"}>VB.Net</Badge>
+                <Badge variant={"secondary"}>Php</Badge>
+              </div>
+
+              <div className="mt-5 mb-2 ">
+                <p className="text-bold">Web Development: </p>
+              </div>
+
+              <div className="flex w-full flex-wrap gap-2">
+                <Badge variant={"secondary"}>HTML</Badge>
+                <Badge variant={"secondary"}>CSS</Badge>
+                <Badge variant={"secondary"}>Tailwind CSS</Badge>
+                <Badge variant={"secondary"}>JavaScript</Badge>
+                <Badge variant={"secondary"}>Next JS</Badge>
+                <Badge variant={"secondary"}>Shadcdn UI</Badge>
+              </div>
+
+              <div className="mt-5 mb-2 ">
+                <p className="text-bold">Networking & IT: </p>
+              </div>
+
+              <div className="flex w-full flex-wrap gap-2">
+                <Badge variant={"secondary"}>Basic Network Configuration</Badge>
+                <Badge variant={"secondary"}>Troubleshooting</Badge>
+              </div>
+
+              <div className="mt-5 mb-2 ">
+                <p className="text-bold">Database Management: </p>
+              </div>
+
+              <div className="flex w-full flex-wrap gap-2">
+                <Badge variant={"secondary"}>MySQL</Badge>
+              </div>
+
+              <div className="mt-5 mb-2 ">
+                <p className="text-bold">Tools & Technologies: </p>
+              </div>
+
+              <div className="flex w-full flex-wrap gap-2">
+                <Badge variant={"secondary"}>MS Office</Badge>
+                <Badge variant={"secondary"}>VS Studio Code</Badge>
+                <Badge variant={"secondary"}>Adobe Photoshop</Badge>
+                <Badge variant={"secondary"}>Canva</Badge>
+                <Badge variant={"secondary"}>Github</Badge>
+                <Badge variant={"secondary"}>Git</Badge>
+              </div>
+            </div>
+
+            <div className="mt-15">
+              <div className="w-full flex my-2 ">
+                <h1 className="text-3xl">Projects</h1>
+              </div>
+              <div className="my-10">
+                <p className="text-xl my-3">Grade 10 Learning Module</p>
+                <img
+                  src="/res/module.png"
+                  alt="module.png"
+                  className="w-full aspect-4/3 object-cover rounded-lg my-5"
+                />
+                <p className="text-sm my-5 lg:text-lg">
+                  This website was made to introduce to you the science lessons
+                  based in Grade 10 Learner Module. This website is free to read
+                  and any information written in this website is completely
+                  reliable and free to copy. This website will work offline, and
+                  specially made for the author's proffesor. I'm hoping for your
+                  enjoyment in reading this website.
+                </p>
+                <p>
+                  <a
+                    href="https://jeserry-radcliffe.github.io/Module/"
+                    className="cursor-pointer"
+                  >
+                    Project Link
+                  </a>
+                </p>
+                <div className="flex w-full flex-wrap gap-2 mt-5">
+                  <Badge variant={"secondary"}>HTML</Badge>
+                  <Badge variant={"secondary"}>CSS</Badge>
+                </div>
+              </div>
+
+              <div className="my-10">
+                <p className="text-xl">Budget Monitoring System</p>
+                <img
+                  src="/res/bms1.jpg"
+                  alt="bms.jpg"
+                  className="w-full object-cover rounded-lg my-5"
+                />
+                <p className="text-sm my-5 lg:text-lg">
+                  This system records and categorizes expenses, provides
+                  real-time updates on spending, and monitors all sources of
+                  income against projected revenues. It aids in creating
+                  detailed budget plans and setting financial goals, while
+                  sending alerts for overspending or unusual activity, and
+                  notifying users of upcoming payments or deadlines. With its
+                  ability to generate reports on financial performance and offer
+                  insights of organized tables.
+                </p>
+                <p>
+                  {/* <a href="" className="cursor-pointer">
+                    Project Link
+                  </a> */}
+                </p>
+                <div className="flex w-full flex-wrap gap-2 mt-5">
+                  <Badge variant={"secondary"}>HTML</Badge>
+                  <Badge variant={"secondary"}>CSS</Badge>
+                  <Badge variant={"secondary"}>JavaScript</Badge>
+                  <Badge variant={"secondary"}>Php</Badge>
+                  <Badge variant={"secondary"}>MySQL</Badge>
+                </div>
+              </div>
+
+              <div className="my-10">
+                <p className="text-xl">URS Landing Page</p>
+                <img
+                  src="/res/urs.jpg"
+                  alt="urs.jpg"
+                  className="w-full object-cover rounded-lg my-5"
+                />
+                <p className="text-sm my-5 lg:text-lg">
+                  The University of Rizal System landing page welcomes
+                  students/admin with a clean design that highlights the
+                  university’s mission and academic programs. It provides easy
+                  access to important sections such as admissions, academics,
+                  and student services. The page also shares news and events to
+                  keep students and visitors informed.
+                </p>
+                <p>
+                  <a
+                    href="https://www.youtube.com/watch?v=aqnKQRWLhF4"
+                    className="cursor-pointer"
+                  >
+                    Project Link
+                  </a>
+                </p>
+                <div className="flex w-full flex-wrap gap-2 mt-5">
+                  <Badge variant={"secondary"}>HTML</Badge>
+                  <Badge variant={"secondary"}>CSS</Badge>
+                  <Badge variant={"secondary"}>Php</Badge>
+                </div>
+              </div>
+            </div>
+
+            <div className="my-15 scroll-mt-12 w-full" id="contact">
+              <div className="w-full flex my-2 ">
+                <h1 className="text-3xl">Contact</h1>
+              </div>
+              <div>
+                <ContactForm></ContactForm>
+              </div>
             </div>
           </div>
         </div>
 
-        <div className="my-15 scroll-mt-8" id="contact">
-          <div className="w-full flex my-2 ">
-            <h1 className="text-3xl">Contact</h1>
-          </div>
-          <div>
-            <ContactForm></ContactForm>
-          </div>
-        </div>
-
-        <footer>
-          <p className="text-sm text-center flex flex-col items-center justify-center w-full">
+        <footer className="text-center flex flex-col items-center justify-center w-full mx-auto">
+          <p className="text-sm mb-10 lg:text-lg">
             © Mark Jeserry Sicat - All Rights Reserved 2026
           </p>
 
-          <div className="mt-5 flex justify-between text-center items-center w-[85%] mx-auto">
+          <div className="mt-5 flex justify-between text-center items-center w-[85%] mx-auto lg:w-[40%]">
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
               <FaGithub style={{ width: "25px", height: "25px" }} />
             </div>
@@ -390,20 +435,19 @@ export default function Home() {
         </footer>
 
         <div className="fixed bottom-5 right-6">
-          <a href="#top" className="w-7 h-7">
+          <a href="#top" className="">
             <Button
               variant={"secondary"}
               size={"icon"}
-              className="rounded-full transition-transform duration-200 hover:-translate-y-2"
+              className="w-10 h-10 rounded-full transition-transform duration-200 hover:-translate-y-2"
             >
-              <FaChevronCircleUp />
+              <FaChevronCircleUp style={{ width: "20px", height: "20px" }} />
             </Button>
           </a>
         </div>
 
         <br />
         <br />
-        <ThemeToggle />
 
         <br />
         <br />
