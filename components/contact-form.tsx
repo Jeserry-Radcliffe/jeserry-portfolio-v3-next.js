@@ -52,12 +52,12 @@ export default function ContactForm() {
 
           <Button variant={"default"} id="submit-email">Send</Button>
 
-          <Field orientation="horizontal">
+          {/* <Field orientation="horizontal">
             <Switch id="newsletter" />
             <FieldLabel htmlFor="newsletter">
               I'm interested working with you.
             </FieldLabel>
-          </Field>
+          </Field> */}
         </FieldGroup>
       </FieldSet>
     </form>

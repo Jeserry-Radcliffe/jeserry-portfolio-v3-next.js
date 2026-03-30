@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black w-full">
       <main
-        className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 bg-white dark:bg-black sm:items-start 
+        className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 sm:items-start 
         md:py-25 md:px-50 lg:px-0 lg:max-w-4xl"
         id="top"
       >
@@ -53,7 +53,7 @@ export default function Home() {
           className="flex justify-center mt-5 mx-10
         md:mx-24 lg:mb-30 lg:mx-72"
         >
-          <Button variant="outline" className="rounded-full p-5">
+          <Button variant="outline" className="rounded-full px-5 py-5">
             <MdOutlineWorkOutline />
             &nbsp;&nbsp; Work Experiences
           </Button>
@@ -115,12 +115,12 @@ export default function Home() {
 
             <div className="mt-7 flex justify-between text-center w-[70%] mx-auto lg:w-[50%] lg:mx-0">
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1 ">
-                <a href="">
+                <a href="https://github.com/Jeserry-Radcliffe">
                   <FaGithub style={{ width: "25px", height: "25px" }} />
                 </a>
               </div>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-                <a href="">
+                <a href="https://www.linkedin.com/in/mark-jeserry-sicat-1603aa277">
                   <FaLinkedin style={{ width: "25px", height: "25px" }} />
                 </a>
               </div>
@@ -130,7 +130,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-                <a href="">
+                <a href="/res/ResumeCV - Sicat, Mark Jeserry M..pdf" download>
                   <IoDocument style={{ width: "25px", height: "25px" }} />
                 </a>
               </div>
