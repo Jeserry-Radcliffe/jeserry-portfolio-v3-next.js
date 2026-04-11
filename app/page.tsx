@@ -21,7 +21,7 @@ export default function Home() {
   const [isTextOpen, setIsTextOpen] = useState(false); // For the Text
 
   return (
-    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black w-full">
+    <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans bg-[url('/res/siteBG-light.png')] dark:bg-black dark:bg-[url('/res/siteBG-dark.png')]  lg:bg-top bg-size-[1100px] lg:bg-contain bg-top bg-no-repeat w-full">
       <main
         className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 sm:items-start 
         md:py-25 md:px-50 lg:px-0 lg:max-w-4xl"
@@ -30,7 +30,7 @@ export default function Home() {
         <ThemeToggle />
         <p
           className="text-5xl font-semibold my-15 bg-cover bg-center lg:px-5
-        lg:text-7xl lg:mt-20"
+        lg:text-8xl lg:mt-20"
         >
           Building bridges between{" "}
           <span className="text-pink-500 animate-[pulse_5s_infinite]">
@@ -41,7 +41,7 @@ export default function Home() {
         <p className="lg:text-xl  lg:px-5">
           {/* I'm Jeserry, a design engineer, programmer, where I craft intuitive
           user experiences. After hours, I build my own projects. */}
-          I'm <span className="text-amber-400 font-bold">Jeserry</span> a
+          I'm <span className="text-amber-400 font-bold ">Jeserry</span> a
           Computer Science graduate an aspiring programmer. I enjoy turning
           ideas into working lines of code, building a clean, simple websites
           using modern tools. I'm open for many opportunities to start my tech
@@ -80,7 +80,7 @@ export default function Home() {
             <img
               src="/res/photo-jeserry.jpg"
               alt="jeserry.jpg"
-              className="w-45 h-45 rounded-full object-cover  border-amber-500  border-2 lg:w-56 lg:h-56 lg:items-center lg:mt-0"
+              className="w-45 h-45 rounded-full object-cover  border-blue-500  border-2 lg:w-56 lg:h-56 lg:items-center lg:mt-0"
             />
             <div className="flex justify-center w-full p-1 items-center mt-3">
               <TiWorldOutline className="w-6 h-6 text-center text-blue-500" />
