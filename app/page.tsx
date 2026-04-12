@@ -7,7 +7,7 @@ import { ThemeToggle } from "@/components/ui/theme-toggle";
 import ClientThemeProvider from "@/components/ClientThemeProvider";
 import { TiWorldOutline } from "react-icons/ti";
 import { Badge } from "@/components/ui/badge";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdFacebook } from "react-icons/md";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoDocument } from "react-icons/io5";
@@ -15,6 +15,8 @@ import { HoverCardSides } from "@/components/hovercards";
 import ContactForm from "@/components/contact-form";
 import { MdOutlineWorkOutline } from "react-icons/md";
 import { FaChevronCircleUp } from "react-icons/fa";
+import { GoArrowUpRight } from "react-icons/go";
+import { SiReaddotcv } from "react-icons/si";
 
 export default function Home() {
   const [isOpen, setIsOpen] = useState(false); //For Image
@@ -97,11 +99,11 @@ export default function Home() {
                 Filipino
               </Badge>
             </div>
-            <div className="">
+            <div className="flex flex-col w-full justify-center text-center">
               <a href="#contact">
                 <Button
                   variant="outline"
-                  className="rounded-full p-5 mt-10 mb-7 
+                  className="rounded-full p-5 mt-10 mb-2 
                   "
                 >
                   <MdEmail
@@ -109,6 +111,19 @@ export default function Home() {
                     className="w-6 h-6 text-2xl text-center"
                   />
                   Send an Email
+                </Button>
+              </a>
+              <a href="/res/ResumeCV - Sicat, Mark Jeserry M..pdf" download>
+                <Button
+                  variant="outline"
+                  className="rounded-full p-5 mt-3 mb-7 
+                  "
+                >
+                  <IoDocument
+                    style={{ width: "30px", height: "30px" }}
+                    className="w-6 h-6 text-2xl  text-center"
+                  />
+                  Download CV
                 </Button>
               </a>
             </div>
@@ -137,12 +152,15 @@ export default function Home() {
                 </a>
               </div>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-                <a href="">
-                  <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+                <a href="https://www.facebook.com/gOnG.gOnGgOrA">
+                  <MdFacebook
+                    style={{ width: "25px", height: "25px" }}
+                  ></MdFacebook>
                 </a>
               </div>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
                 <a href="/res/ResumeCV - Sicat, Mark Jeserry M..pdf" download>
+                  {/* <SiReaddotcv style={{ width: "25px", height: "25px" }} /> */}
                   <IoDocument style={{ width: "25px", height: "25px" }} />
                 </a>
               </div>
@@ -376,9 +394,9 @@ export default function Home() {
                 <p>
                   <a
                     href="https://jeserry-radcliffe.github.io/Module/"
-                    className="cursor-pointer"
+                    className="cursor-pointer text-blue-300"
                   >
-                    Project Link
+                    View Project Demo
                   </a>
                 </p>
                 <div className="flex w-full flex-wrap gap-2 mt-5">
@@ -433,13 +451,14 @@ export default function Home() {
                   and student services. The page also shares news and events to
                   keep students and visitors informed.
                 </p>
-                <p>
+                <p className="flex text-center">
                   <a
                     href="https://www.youtube.com/watch?v=aqnKQRWLhF4"
-                    className="cursor-pointer"
+                    className="cursor-pointer text-blue-300"
                   >
-                    Project Link
+                    View Project Demo
                   </a>
+                  {/* <GoArrowUpRight className="text-2xl underline" /> */}
                 </p>
                 <div className="flex w-full flex-wrap gap-2 mt-5">
                   <Badge variant={"secondary"}>HTML</Badge>
@@ -450,8 +469,12 @@ export default function Home() {
             </div>
 
             <div>
-              <button onClick={() => setIsTextOpen(true)} className="underline">
-                <i>More of My Projects</i>
+              <button
+                onClick={() => setIsTextOpen(true)}
+                className="underline flex justify-center text-center cursor-pointer"
+              >
+                <i>More of My Projects</i>{" "}
+                <GoArrowUpRight className="text-2xl underline" />
               </button>
 
               <div className="">
@@ -464,7 +487,9 @@ export default function Home() {
                       &times;
                     </button>
                     <div>
-                      <p className="w-[80%] mx-auto py-5">Sorry this page is currently in progress. Thank you.</p>
+                      <p className="w-[80%] mx-auto py-5">
+                        Sorry this page is currently in progress. Thank you.
+                      </p>
                     </div>
                   </div>
                 )}
@@ -492,13 +517,21 @@ export default function Home() {
 
           <div className="mt-5 flex justify-between text-center items-center w-[85%] mx-auto lg:w-[40%]">
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <FaGithub style={{ width: "25px", height: "25px" }} />
+              <a href="https://github.com/Jeserry-Radcliffe">
+                <FaGithub style={{ width: "25px", height: "25px" }} />
+              </a>
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <FaLinkedin style={{ width: "25px", height: "25px" }} />
+              <a href="https://www.linkedin.com/in/mark-jeserry-sicat-1603aa277">
+                <FaLinkedin style={{ width: "25px", height: "25px" }} />
+              </a>{" "}
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-              <MdEmail style={{ width: "25px", height: "25px" }}></MdEmail>
+              <a href="https://www.facebook.com/gOnG.gOnGgOrA">
+                <MdFacebook
+                  style={{ width: "25px", height: "25px" }}
+                ></MdFacebook>
+              </a>
             </div>
             <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
               <IoDocument style={{ width: "25px", height: "25px" }} />

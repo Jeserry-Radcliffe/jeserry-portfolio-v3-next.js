@@ -36,7 +36,7 @@ export default function ContactForm() {
           <Field>
             <FieldLabel htmlFor="email">Full Email</FieldLabel>
             <Input id="email" name="email" autoComplete="off" placeholder="Email here" />
-            <FieldDescription>This is how will I contact you.</FieldDescription>
+            <FieldDescription>I'll be in touch shortly.</FieldDescription>
           </Field>
 
           <Field>
