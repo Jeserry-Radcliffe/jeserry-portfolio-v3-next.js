@@ -35,19 +35,19 @@ export default function ContactForm() {
         <FieldGroup>
           <Field>
             <FieldLabel htmlFor="email">Full Email</FieldLabel>
-            <Input id="email" name="email" autoComplete="off" placeholder="Email here" />
+            <Input id="email" name="email" autoComplete="off" placeholder="Email here" required/>
             <FieldDescription>I'll be in touch shortly.</FieldDescription>
           </Field>
 
           <Field>
             <FieldLabel htmlFor="name">Name</FieldLabel>
-            <Input id="name" name="name" autoComplete="off" placeholder="Name" />
+            <Input id="name" name="name" autoComplete="off" placeholder="Name" required />
             {/* aria-invalid */}
           </Field>
 
           <Field>
             <FieldLabel htmlFor="name">Message</FieldLabel>
-            <Textarea id="message" name="message" autoComplete="off" placeholder="Message" />
+            <Textarea id="message" name="message" autoComplete="off" placeholder="Message" required />
           </Field>
 
           <Button variant={"default"} id="submit-email">Send</Button>
