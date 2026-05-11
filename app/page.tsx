@@ -26,7 +26,7 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-center bg-zinc-50 font-sans bg-[url('/res/siteBG-light.png')] dark:bg-black dark:bg-[url('/res/siteBG-dark.png')]  lg:bg-top bg-size-[1100px] lg:bg-contain bg-top bg-no-repeat w-full">
       <main
         className="flex min-h-screen w-full max-w-3xl flex-col justify-between py-7 px-10 sm:items-start 
-        md:py-25 md:px-50 lg:px-0 lg:max-w-4xl"
+        md:py-25 md:px-50 lg:px-0 lg:max-w-5xl"
         id="top"
       >
         <ThemeToggle />
@@ -51,8 +51,8 @@ export default function Home() {
         </p>
         <a
           href="#about"
-          className="flex justify-center mt-13 mx-10
-        md:mt-25 md:mx-25 lg:mt-30 lg:mx-72"
+          className="flex justify-center mt-13 mx-auto w-[70%]
+        md:mt-25 md:mx-25 lg:mt-30 "
         >
           <Button variant="outline" className="rounded-full p-5">
             <img
@@ -65,8 +65,8 @@ export default function Home() {
         </a>
         <a
           href="#workexp"
-          className="flex justify-center mt-5 mx-10
-        md:mx-24 lg:mb-30 lg:mx-72"
+          className="flex justify-center mt-5 mx-auto w-[71%]
+        md:mx-24 lg:mb-30"
         >
           <Button variant="outline" className="rounded-full px-5 py-5">
             <MdOutlineWorkOutline />
@@ -113,7 +113,7 @@ export default function Home() {
                   Send an Email
                 </Button>
               </a>
-              <a href="/res/ResumeCV - Sicat, Mark Jeserry M..pdf" download>
+              <a href="/res/Resume - Sicat, Mark Jeserry M..pdf" download>
                 <Button
                   variant="outline"
                   className="rounded-full p-5 mt-3 mb-7 
@@ -159,7 +159,7 @@ export default function Home() {
                 </a>
               </div>
               <div className="inline-flex items-center justify-center w-10 h-10 rounded-full border border-gray-400 p-1">
-                <a href="/res/ResumeCV - Sicat, Mark Jeserry M..pdf" download>
+                <a href="/res/Resume - Sicat, Mark Jeserry M..pdf" download>
                   {/* <SiReaddotcv style={{ width: "25px", height: "25px" }} /> */}
                   <IoDocument style={{ width: "25px", height: "25px" }} />
                 </a>
